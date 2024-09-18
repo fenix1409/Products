@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+    </style>
+</head>
+<body class="p-10 bg-violet-500 flex items-center justify-center gap-[43px]">
+    
+    
+    <input class="search-input py-[14px] text-[23px] leading-[23px] w-[300px] pl-[10px] outline-none border-r-[1px] border-[#EBEBFF] rounded-md" type="text" placeholder="Search" name="search" autocomplete="off">
+    <ul class="products-list p-[15px] bg-blue-700 space-y-5 w-[350px] border-[2px] border-slate-600 rounded-md h-[90vh] overflow-y-auto"></ul>
+    
+    <script src="./js/homework.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
