@@ -12,13 +12,27 @@
         }
     </style>
 </head>
-<body class="p-10 bg-violet-500 flex items-center justify-center gap-[43px]"> 
-    <ul class="list bg-blue-700 space-y-5 w-[350px] border-[2px] border-slate-600 rounded-md h-[90vh] overflow-y-auto"></ul>
-    <ul class="posts bg-blue-700 space-y-5 w-[350px] border-[2px] border-slate-600 rounded-md h-[90vh] overflow-y-auto"></ul>
-    <ul class="comments bg-blue-700 space-y-5 w-[350px] border-[2px] border-slate-600 rounded-md h-[90vh] overflow-y-auto"></ul>
-    
+<body class="p-10 bg-violet-500 flex items-center justify-center gap-[43px]">
 
+    <div class="w-[350px]">
+        <input class="search-input py-[14px] text-[23px] leading-[23px] w-[100%] pl-[10px] outline-none border-r-[1px] border-[#EBEBFF] rounded-md mb-4" 
+        type="text" placeholder="Search users" autocomplete="off">
+        <ul class="list bg-blue-700 space-y-5 border-[2px] border-slate-600 rounded-md h-[70vh] overflow-y-auto"></ul>
+    </div>
+    <div class="w-[350px]">
+        <input class="search-input2 py-[14px] text-[23px] leading-[23px] w-[100%] pl-[10px] outline-none border-r-[1px] border-[#EBEBFF] rounded-md mb-4" 
+        type="text" placeholder="Search posts" autocomplete="off">
+        <ul class="posts bg-blue-700 space-y-5 border-[2px] border-slate-600 rounded-md h-[70vh] overflow-y-auto"></ul>
+    </div>
+    <div class="w-[350px]">
+        <input class="search-input3 py-[14px] text-[23px] leading-[23px] w-[100%] pl-[10px] outline-none border-r-[1px] border-[#EBEBFF] rounded-md mb-4" 
+        type="text" placeholder="Search comments" autocomplete="off">
+        <ul class="comments bg-blue-700 space-y-5 border-[2px] border-slate-600 rounded-md h-[70vh] overflow-y-auto"></ul>
+    </div>
+
+    
     <a class="inline-block w-[250px] py-[8px] bg-green-500 text-center text-[17px] leading-[22px] font-medium text-white border-[2px] hover:scale-[1.2] duration-300 rounded-[20px] border-none" href="./homework.html">Homework part</a>
+    
     <script src="./js/main.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>

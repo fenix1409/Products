@@ -22,9 +22,8 @@ function renderProducts(arr) {
 
 
 
-fetch("https://dummyjson.com/products")
-    .then(res => res.json())
-    .then(data => {
+fetch("https://dummyjson.com/products").then(res => res.json())
+.then(data => {
         productsData = data.products; 
         renderProducts(productsData);  
     })
